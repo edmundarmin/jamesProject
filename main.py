@@ -15,7 +15,7 @@ for cl in os.listdir('test'):
         x = cv2.cvtColor(img.copy(),cv2.COLOR_BGR2RGB)
         inference = model.inference(x,(224,224))
         indexclasses = np.argmax(inference)
-        print(cl,classes[indexclasses])
+        print(imgname,classes[indexclasses])
 
        
 
